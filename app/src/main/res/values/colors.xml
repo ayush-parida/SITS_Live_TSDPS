@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryOLD">#008577</color>
+    <color name="colorPrimaryDarkOLD">#00574B</color>
+    <color name="colorAccentOLD">#D81B60</color>
+
+
+    <color name="colorPrimary">#FF3B30</color>
+    <color name="colorPrimaryDark">#FF1B10</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
+</resources>

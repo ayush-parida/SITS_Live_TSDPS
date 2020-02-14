@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+    </group>
+    <group android:id="@+id/a">
+        <item
+            android:id="@+id/nav_exam"
+            android:icon="@drawable/file_chart"
+            android:title="@string/menu_exam" />
+    </group>
+    <group android:id="@+id/b">
+        <item
+            android:id="@+id/nav_fee"
+            android:icon="@drawable/cash_usd"
+            android:title="@string/menu_fee" />
+        <!--        <item-->
+        <!--            android:id="@+id/nav_transport"-->
+        <!--            android:icon="@drawable/bus_school"-->
+        <!--            android:title="@string/menu_transport" />-->
+    </group>
+    <group android:id="@+id/c">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/account_circle"
+            android:title="@string/menu_profile" />
+    </group>
+    <group android:id="@+id/d">
+        <item
+            android:id="@+id/nav_academics"
+            android:icon="@drawable/briefcase"
+            android:title="@string/menu_academics" />
+    </group>
+    <group android:id="@+id/e">
+        <item
+            android:id="@+id/nav_school"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_school" />
+    </group>
+    <group android:id="@+id/f">
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_library" />
+    </group>
+
+</menu>

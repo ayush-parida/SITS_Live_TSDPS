@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sitslive.sitsliveschool.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_fee"
+        android:name="com.sitslive.sitsliveschool.ui.fee.FeeFragment"
+        android:label="@string/menu_fee"
+        tools:layout="@layout/fragment_fee" />
+    <fragment
+        android:id="@+id/nav_exam"
+        android:name="com.sitslive.sitsliveschool.ui.exam.ExamFragment"
+        android:label="@string/menu_exam"
+        tools:layout="@layout/fragment_exam" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_transport"-->
+    <!--        android:name="com.sits.school360.ui.transport.TransportFragment"-->
+    <!--        android:label="@string/menu_transport"-->
+    <!--        tools:layout="@layout/fragment_transport" />-->
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.sitslive.sitsliveschool.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_school"
+        android:name="com.sitslive.sitsliveschool.ui.schoolDetails.SchoolDetailsFragment"
+        android:label="@string/menu_school"
+        tools:layout="@layout/fragment_profile" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_notices"-->
+    <!--        android:name="com.sits.school360.ui.notices.NoticesFragment"-->
+    <!--        android:label="@string/menu_notices"-->
+    <!--        tools:layout="@layout/fragment_notices" />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_events"-->
+    <!--        android:name="com.sits.school360.ui.events.EventsFragment"-->
+    <!--        android:label="@string/menu_events"-->
+    <!--        tools:layout="@layout/fragment_events" />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_timetable"-->
+    <!--        android:name="com.sits.school360.ui.timetable.TimetableFragment"-->
+    <!--        android:label="@string/menu_timetable"-->
+    <!--        tools:layout="@layout/fragment_timetable" />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_teachers"-->
+    <!--        android:name="com.sits.school360.ui.teachers.TeachersFragment"-->
+    <!--        android:label="@string/menu_teachers"-->
+    <!--        tools:layout="@layout/fragment_teachers" />-->
+    <fragment
+        android:id="@+id/nav_academics"
+        android:name="com.sitslive.sitsliveschool.ui.academics.AcademicsFragment"
+        android:label="@string/menu_academics"
+        tools:layout="@layout/fragment_academics" />
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="com.sitslive.sitsliveschool.ui.library.LibraryFragment"
+        android:label="@string/menu_library"
+        tools:layout="@layout/fragment_library" />
+
+</navigation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sitslive.sitsliveschool">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.academics.AcademicsFragment"></activity>
+        <activity android:name=".ui.exam.ExamFragment"></activity>
+        <activity android:name=".ui.fee.FeeFragment"></activity>
+        <activity android:name=".ui.profile.ProfileFragment"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ui.homeworkDetails.HomeworkActivity"
+            android:parentActivityName=".ui.academics.AcademicsFragment"
+            android:label="Home-work"/>
+        <activity
+            android:name=".ui.teachersDetails.MyTeachersActivity"
+            android:parentActivityName=".ui.academics.AcademicsFragment"
+            android:label="My Teachers"/>
+        <activity
+            android:name=".ui.timetableDetails.TimeTableActivity"
+            android:parentActivityName=".ui.academics.AcademicsFragment"
+            android:label="Time Table"/>
+        <activity
+            android:name=".ui.subjectDetails.SubjectDetailsActivity"
+            android:parentActivityName=".ui.academics.AcademicsFragment"
+            android:label="My Subjects"/>
+        <activity
+            android:name=".ui.feeSummary.FeeSummaryActivity"
+            android:parentActivityName=".ui.fee.FeeFragment"
+            android:label="Fee Summary"/>
+        <activity
+            android:name=".ui.transportDetails.TransportActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="My Transport Details"/>
+        <activity
+            android:name=".ui.examReport.ExamReportActivity"
+            android:parentActivityName=".ui.exam.ExamFragment"
+            android:label="Exam Result"/>
+        <activity
+            android:name=".ui.examSchedule.ExamScheduleActivity"
+            android:parentActivityName=".ui.exam.ExamFragment"
+            android:label="Exam Schedule"/>
+        <activity
+            android:name=".ui.feeDueDetails.FeeDueDetailsActivity"
+            android:parentActivityName=".ui.fee.FeeFragment"
+            android:label="Fee Due Details"/>
+        <activity
+            android:name=".ui.feePaidDetails.FeePaidDetailsActivity"
+            android:parentActivityName=".ui.fee.FeeFragment"
+            android:label="Fee Paid Details"/>
+        <activity
+            android:name=".ui.myAttendance.AttendanceActivity"
+            android:parentActivityName=".ui.academics.AcademicsFragment"
+            android:label="My Attendance"/>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
