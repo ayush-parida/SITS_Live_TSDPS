@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class ReturnDetailsRecyclerViewAdapter extends RecyclerView.Adapter<ReturnDetailsRecyclerViewAdapter.DataObjectHolder> {
     private static String LOG_TAG = "FeeSummaryRecyclerViewAdapter";
-    private ArrayList<FeePaidDetailsDataObject> mDataset;
+    private ArrayList<ReturnDetailsDataObject> mDataset;
     private static MyClickListener myClickListener;
     public static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
@@ -45,7 +45,7 @@ public class ReturnDetailsRecyclerViewAdapter extends RecyclerView.Adapter<Retur
     public void setOnItemClickListener(MyClickListener myClickListener) {
 //        this.myClickListener = myClickListener;
     }
-    public ReturnDetailsRecyclerViewAdapter(ArrayList<FeePaidDetailsDataObject> myDataset) {
+    public ReturnDetailsRecyclerViewAdapter(ArrayList<ReturnDetailsDataObject> myDataset) {
         mDataset = myDataset;
     }
     @Override
@@ -65,7 +65,7 @@ public class ReturnDetailsRecyclerViewAdapter extends RecyclerView.Adapter<Retur
 //        holder.totalDue.setText(mDataset.get(position).getmTotalDue());
 //        holder.balance.setText(mDataset.get(position).getmBalance());
     }
-    public void addItem(FeePaidDetailsDataObject dataObj, int index) {
+    public void addItem(ReturnDetailsDataObject dataObj, int index) {
         mDataset.add(index, dataObj);
         notifyItemInserted(index);
     }

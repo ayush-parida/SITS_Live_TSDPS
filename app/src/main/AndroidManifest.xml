@@ -57,6 +57,14 @@
             android:parentActivityName=".ui.fee.FeeFragment"
             android:label="Fee Due Details"/>
         <activity
+            android:name=".ui.issueDetails.IssueDetailsActivity"
+            android:parentActivityName=".ui.library.LibraryFragment"
+            android:label="Issue Details"/>
+        <activity
+            android:name=".ui.returnDetails.ReturnDetailsActivity"
+            android:parentActivityName=".ui.library.LibraryFragment"
+            android:label="Return Details"/>
+        <activity
             android:name=".ui.feePaidDetails.FeePaidDetailsActivity"
             android:parentActivityName=".ui.fee.FeeFragment"
             android:label="Fee Paid Details"/>

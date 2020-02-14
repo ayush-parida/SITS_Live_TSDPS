@@ -16,6 +16,8 @@ import com.sitslive.sitsliveschool.ui.fee.FeeViewModel;
 import com.sitslive.sitsliveschool.ui.feeDueDetails.FeeDueDetailsActivity;
 import com.sitslive.sitsliveschool.ui.feePaidDetails.FeePaidDetailsActivity;
 import com.sitslive.sitsliveschool.ui.feeSummary.FeeSummaryActivity;
+import com.sitslive.sitsliveschool.ui.issueDetails.IssueDetailsActivity;
+import com.sitslive.sitsliveschool.ui.returnDetails.ReturnDetailsActivity;
 
 public class LibraryFragment extends Fragment {
 
@@ -24,12 +26,12 @@ public class LibraryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_fee, container, false);
+        View v = inflater.inflate(R.layout.fragment_library, container, false);
         CardView feeSummary=v.findViewById(R.id.FeeSummary);
         feeSummary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FeeSummaryActivity.class);
+                Intent intent = new Intent(getActivity(), IssueDetailsActivity.class);
                 getActivity().startActivity(intent);
             }
         });
@@ -37,7 +39,7 @@ public class LibraryFragment extends Fragment {
         feeDueDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FeeDueDetailsActivity.class);
+                Intent intent = new Intent(getActivity(), ReturnDetailsActivity.class);
                 getActivity().startActivity(intent);
             }
         });

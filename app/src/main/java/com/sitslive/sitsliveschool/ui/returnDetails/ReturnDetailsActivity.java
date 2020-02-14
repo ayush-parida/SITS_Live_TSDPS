@@ -20,8 +20,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.sitslive.sitsliveschool.GlobalVariables;
 import com.sitslive.sitsliveschool.MainActivity;
 import com.sitslive.sitsliveschool.R;
-import com.sitslive.sitsliveschool.ui.feePaidDetails.FeePaidDetailsDataObject;
-import com.sitslive.sitsliveschool.ui.feePaidDetails.FeePaidDetailsRecyclerViewAdapter;
+import com.sitslive.sitsliveschool.ui.returnDetails.ReturnDetailsDataObject;
+import com.sitslive.sitsliveschool.ui.returnDetails.ReturnDetailsRecyclerViewAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -71,10 +71,10 @@ public class ReturnDetailsActivity extends AppCompatActivity {
         loadCardsData(URL);
     }
 
-    private ArrayList<FeePaidDetailsDataObject> getDataSet() {
-        ArrayList results = new ArrayList<FeePaidDetailsDataObject>();
+    private ArrayList<ReturnDetailsDataObject> getDataSet() {
+        ArrayList results = new ArrayList<ReturnDetailsDataObject>();
         for (int index = 0; index < x; index++) {
-            FeePaidDetailsDataObject obj = new FeePaidDetailsDataObject("Fee Receive Number: "+Date.get(index),"Fee Paid On: "+FeeFor.get(index),
+            ReturnDetailsDataObject obj = new ReturnDetailsDataObject("Fee Receive Number: "+Date.get(index),"Fee Paid On: "+FeeFor.get(index),
                     "Amount: "+TotalAmount.get(index));
             results.add(index, obj);
         }
@@ -110,7 +110,7 @@ public class ReturnDetailsActivity extends AppCompatActivity {
                         x = x + 1;
                     }
 
-                    mAdapter = new FeePaidDetailsRecyclerViewAdapter(getDataSet());
+                    mAdapter = new ReturnDetailsRecyclerViewAdapter(getDataSet());
                     mRecyclerView.setAdapter(mAdapter);
                     //spinner.setAdapter(new ArrayAdapter<String>(FeeSummaryActivity.this, android.R.layout.simple_spinner_dropdown_item, SchoolNames));
                 } catch (JSONException e) {

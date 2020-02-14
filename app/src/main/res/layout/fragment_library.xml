@@ -65,7 +65,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Exam Schedule"
+                    android:text="Issue Details"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/mo_re"
                     android:textColor="@color/textcardColor"
@@ -106,7 +106,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Exam Result"
+                    android:text="Return Details"
                     android:textColor="@color/textcardColor"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
